@@ -248,8 +248,9 @@ hps_io #(.CONF_STR(CONF_STR)) hps_io
 	
 	.joystick_0(joystick_0),
 	.joystick_1(joystick_1),
-	.joystick_analog_0(joystick_analog_0),
-	.joystick_analog_1(joystick_analog_1),
+	.joystick_l_analog_0(joystick_analog_0),
+	.joystick_l_analog_1(joystick_analog_1),
+
 
 	.ps2_key(ps2_key),
 );
@@ -289,7 +290,7 @@ vc4000_core vc4000_core
 	.ntsc_pal(1'b1),
 	.swap(status[3]),
 	.swapxy(status[4]),
-        .integ(status[13]),
+    .integ(status[13]),
 	.bright(status[12]),
 
 	.clk_video(CLK_VIDEO),
